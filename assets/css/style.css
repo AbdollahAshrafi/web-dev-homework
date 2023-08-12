@@ -8,6 +8,12 @@ header {
     justify-content: space-between;
     width: 100%;
     margin-bottom: 64px;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
 }
 
 nav ul {
@@ -23,7 +29,7 @@ nav a {
     border: 0px;
     padding: 8px 16px;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: inherit;
 }
 
 .btn-purple {
@@ -47,6 +53,36 @@ nav a:active {
     border: 2px solid #7c96f7;
     background-color: rgba(0, 0, 0, 0);
 }
+
+.page-path {
+    color: var(--dark, #323030);
+    text-align: center;
+    font-family: Vazirmatn;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.page-title {
+    color: var(--purple, #6C63FF);
+    text-align: center;
+    font-family: Vazirmatn;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.page-title-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 64px;
+}
+
 
 .card {
     display: flex;
@@ -82,39 +118,30 @@ nav a:active {
     justify-content: center;
 }
 
-.page-path {
-    color: var(--dark, #323030);
-    text-align: center;
-    font-family: Vazirmatn;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-}
-
-.page-title {
-    color: var(--purple, #6C63FF);
-    text-align: center;
-    font-family: Vazirmatn;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-}
-
-.page-title-group {
+.hamburger-menu {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 8px;
-    margin-bottom: 64px;
 }
 
 
 
 
 @media only screen and (min-width:576px) {
+
+    header {
+        margin-bottom: 86px;
+    }
+
+    .page-title-group {
+        margin-bottom: 128px;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    header {
+        margin-bottom: 108px;
+    }
+
     nav ul {
         display: flex;
         justify-content: flex-end;
@@ -122,12 +149,8 @@ nav a:active {
         gap: 32px;
     }
 
-    header {
-        margin-bottom: 108px;
-    }
-
-    .page-title-group {
-        margin-bottom: 128px;
+    .hamburger-menu {
+        display: none;
     }
 
 }

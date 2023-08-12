@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        ul {
+            display: none;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+
+        .btn {
+            border: 0px;
+            padding: 8px 16px;
+            border-radius: 8px;
+        }
+
+        .btn-purple {
+            color: #fff;
+            background-color: #7c96f7;
+        }
+
+        nav a:active {
+            color: #6c63ff;
+        }
+
+        @media only screen and (min-width:576px) {
+            ul {
+                display: flex;
+                justify-content: flex-end;
+                list-style-type: none;
+                gap: 32px;
+            }
+
+            header {
+                display: flex;
+                justify-content: space-between;
+            }
+
+        }
+    </style>
+</head>
+
+<body dir="rtl">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">صفحه نخست</a></li>
+                <li><a href="#">وبلاگ</a></li>
+                <li><a href="#">پادکست</a></li>
+                <li><a href="#">دوره ها</a></li>
+            </ul>
+        </nav>
+        <div>
+            <button class="btn btn-purple">مشاهده</button>
+        </div>
+    </header>
+</body>
+
+</html>
