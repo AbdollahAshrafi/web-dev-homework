@@ -171,7 +171,7 @@ nav a {
     color: black;
 }
 
-.btn {
+.button {
     border: 0px;
     padding: 8px 16px;
     border-radius: 8px;
@@ -179,7 +179,7 @@ nav a {
     font-family: 'Vazirmatn', sans-serif;
 }
 
-.btn-purple {
+.button-purple {
     color: #fff;
     background-color: #7c96f7;
 }
@@ -195,7 +195,7 @@ nav a:active {
 
 }
 
-.btn-outline-purple {
+.button-outline-purple {
     color: #7c96f7;
     border: 2px solid #7c96f7;
     background-color: rgba(0, 0, 0, 0);
@@ -231,7 +231,7 @@ nav a:active {
 }
 
 
-.card {
+.my-card {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -243,18 +243,18 @@ nav a:active {
     width: 322px;
 }
 
-.card-image img {
+.my-card-image img {
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
-.card-title {
+.my-card-title {
     font-size: 20px;
     margin-top: 16px;
 }
 
-.card-footer {
+.my-card-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -266,7 +266,7 @@ nav a:active {
     gap: 4px;
 }
 
-.card-group {
+.my-card-group {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
